@@ -1,0 +1,500 @@
+/*Colors: Accent color: #FDBF5B;
+          Secondary color: #FFF6E5;
+          Background color: #141414;
+          Text color: #FFFFFF;*/
+
+:root {
+    --purple: #FDBF5B;
+    --crem: #FFF6E5;
+    --background: #141414;
+    --black: #000000;
+    --white: #FFFFFF;
+    --brown: #333231;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+}
+
+/*Header*/
+
+.mm-header {
+    padding: 40px 0;
+    background-color: var(--background);
+}
+
+.mm-header-container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.mm-header img {
+    width: 150px;
+}
+
+.mm-menu {
+    list-style: none;
+    color: var(--white);
+    gap: 30px;
+}
+
+.mm-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s all;
+}
+
+.mm-menu a:hover {
+    color: var(--purple);
+}
+
+/*Hero Secion*/
+
+.hero-section {
+    background-color: var(--background);
+}
+
+.hero-section-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero-section-text a {
+    color: var(--purple);
+    margin-top: 40px;
+    transition: 0.3s all;
+}
+
+.hero-section-details {
+    padding: 82px 0;
+}
+
+.hero-section-details img {
+    width: 50%;
+    heigth: auto;
+    transition: 0.3s all;
+}
+
+.hero-section-details img:hover {
+    transform: translateY(-2%);
+}
+
+/*Second Section*/
+
+.second-section {
+    background-color: var(--white);
+}
+
+.second-section-container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.second-section img {
+    width: 50%;
+    height: auto;
+    transition: 0.3s all;
+}
+
+.second-section img:hover {
+    transform: translateY(-3%);
+}
+
+/*Signup*/
+
+.mm-signup-div {
+    background-color: #141414;
+}
+
+.mm-signup-container {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.mm-signup-container h2 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.mm-signup-form label {
+    color: var(--white);
+    font-weight: 600;
+    padding-left: 8px;
+}
+
+.mm-signup-form input {
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    padding-left: 8px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+.mm-signup-form button {
+    font-size: 24px;
+    border-radius: 12px;
+    transition: 0.3s all;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mm-signup-form button:hover {
+    cursor: pointer;
+}
+
+/*Login*/
+
+.mm-login-container {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.mm-login-container h2 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/*Profile page*/
+.profile-page {
+    padding-bottom: 100px;
+}
+
+.profile-page-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.details-container {
+    background-color: var(--white);
+    flex: 2;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.details-container ul {
+    list-style: none;
+}
+
+.details-container h4 {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.details-container h5 {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.details-container h3 {
+    font-weight: 600;
+}
+
+.delete-user-button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.edit-user-button {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.update-username-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.playlists-container h2 {
+    font-weight: 600;
+}
+
+.profile-page-img-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.playlists-container {
+    margin-top: 50px;
+}
+
+.playlist-name-container a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.playlists-container a:hover {
+    color: var(--purple);
+}
+
+.playlists-container label {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-playlist-name {
+    color: var(--black);
+    border-radius: 6px;
+    border: var(--black) 1.5px solid;
+    font-size: 20px;
+    font-weight: 500;
+    width: 400px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.playlists-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 16px;
+}
+
+.add-playlist {
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 26px;
+    display: inline-block;
+}
+
+.add-playlist-btn {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.add-playlist button {
+    font-family: 'Montserrat', sans-serif;
+    border: var(--black) 1.5px solid;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.delete-playlist-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: var(--background);
+    color: var(--white);
+    padding-left: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+
+.delete-playlist-button:hover {
+    color: var(--purple);
+}
+
+.edit-playlist-button-style {
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.playlist-name-container {
+    /*height: 100px;*/
+}
+
+#form-id {
+    display: none;
+}
+
+.playlist-name-container {
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.playlist-name-container:hover {
+    background-color: rgba(221, 161, 55, 0.41);
+    font-weight: 600;
+}
+
+.playlist-name-container h4 {
+    font-weight: 500;
+    font-size: 26px;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+/*.playlists-list i {*/
+/*    transiton: all 0.3s;*/
+/*}*/
+
+/*.playlists-list i:hover {*/
+/*    color: var(--purple);*/
+/*}*/
+
+.admin-panel {
+    background-color: var(--white);
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.admin-panel h2 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.users-table-grid {
+    display: grid;
+    grid-template-columns: 1.7fr 1.5fr 3fr 1.5fr 1fr;
+    margin-top: 20px;
+}
+
+.users-table-grid-header div {
+    font-weight: 600;
+}
+
+.users-table-grid form {
+    text-align: center;
+}
+
+.users-table-grid button {
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.users-table-grid button:hover {
+    color: var(--purple);
+}
+
+.update-form {
+    display: flex;
+}
+
+.update-form button {
+    font-size: 16px;
+    border-radius: 12px;
+    transition: 0.3s all;
+    font-family: 'Montserrat', sans-ser
+}
+
+.update-form input {
+    color: var(--black);
+    border-radius: 6px;
+    border: var(--black) 1.5px solid;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Songs*/
+.upload-files-form {
+    background-color: var(--white);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.upload-files-form button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.add-song-button {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+::file-selector-button {
+    background-color: var(--purple);
+    color: var(--background) !important;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.song-list {
+    margin-top: 40px;
+}
+
+.song-list-item {
+    border: var(--white) 1px solid;
+    border-radius: 8px;
+    padding: 12px;
+    padding-top: 20px;
+}
+
+.song-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.play-song {
+    color: var(--purple);
+    background-color: var(--background);
+    border: none;
+    padding: 10px;
+}
+
+.play-song:hover {
+    color: #FFD99D;
+}
+
+.song-add-error {
+    color: var(--purple);
+}
+
+.add-user-form {
+    width: 300px;
+    margin-top: 48px;
+}
+
+.add-user-form input {
+    width: 300px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 6px;
+    border-radius: 8px;
+    border: var(--black) 1px solid;
+}
+
+.add-user-form button {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.added-user-message {
+    font-weight: 500;
+    margin-top: 6px;
+}
+
